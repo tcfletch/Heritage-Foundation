@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Building Management</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+    }
+    .container {
+        text-align: center;
+    }
+    .header {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+    .buttonH {
+        padding: 80px 220px;
+        border: none;
+        border-radius: 20px;
+        background-color: #303030;
+        color: white;
+        font-size: 60px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttonH:hover {
+        background-color: #6e6d6d;
+    }
+    h1, h2 {
+      font-size: 60px;
+      color: #333;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+    }
+
+</style>
+<script>
+  function goBack() {
+  window.history.back();
+}
+</script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Building Name/s:</h1>
+    <div class="buttons">
+        <button class="buttonH">1976 Form</button>
+        <button class="buttonH">Update Forms</button>
+        <button class="buttonH">Attachments</button>
+        <button class="buttonH">Photos</button>
+
+    </div>
+</div>
+
+</body>
+<a href="index.html" class="button" style="position: Fixed; bottom: 20px; left: 20px; width: 10%;">Home</a>
+<button onclick="goBack()"class="button" style="position: fixed; bottom: 20px; right: 20px; width: 10%;">Back</a>
+</html>

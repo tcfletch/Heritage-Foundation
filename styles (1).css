@@ -1,0 +1,41 @@
+.button {
+ background-color: #303030;
+ border: none;
+ color: white;
+ padding: 15px;
+ text-align: center;
+ text-decoration: none;
+ display: block;
+ font-size: 18px; /* Increased font size */
+ font-weight: bold; /* Bold font weight */
+ cursor: pointer;
+ margin: 10px auto;
+ border-radius: 5px;
+ width: 100%; /* Adjusted width for responsiveness */
+ max-width: 400px; /* Maximum width for buttons */
+}
+.button:hover {
+    background-color: #6e6d6d;
+}
+h1, h2 {
+  font-size: 36px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+.pdfContainer {
+  align-items: center;
+  padding: 20px auto;
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+.banner {
+  padding: 10px;
+  text-align: center;
+  background-color: #bcbda2;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
