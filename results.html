@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Results Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<script>
+  function goBack() {
+  window.history.back();
+}
+</script>
+<body>
+  <div id="banner">
+    <h1>Results</h1>
+  </div>
+
+  <div id="results-container">
+    <!-- Results will be dynamically added here -->
+  </div>
+
+  <div id="pageNumbers">
+    <!-- Page number links will be dynamically added here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+<a href="index.html" class="button" style="position: Fixed; bottom: 20px; left: 20px; width: 10%;">Home</a>
+<button onclick="goBack()"class="button" style="position: fixed; bottom: 20px; right: 20px; width: 10%;">Back</a>
+
+</html>
