@@ -28,7 +28,6 @@
      margin-right: 5px; /* Adjust spacing between label and checkbox */
    }
 
-
   .container {
    background-color: #a6a6a6;
    padding: 20px;
@@ -69,7 +68,6 @@
    display: block;
    margin-bottom: 5px;
 
-
   }
   input[type="text"] {
    width: calc(100% - 22px);
@@ -107,12 +105,9 @@
     align-items: center; /* Center items horizontally */
    }
 
-
    .search-form-container {
     width: 100%; /* Set width to 100% for smaller screens */
     padding: 0 10px; /* Adjusted padding for better spacing */
-
-
 
 
     .search-form .column {
@@ -131,8 +126,6 @@
     }
 
 
-
-
     }
    }
  </style>
@@ -140,19 +133,15 @@
 <body>
  <div class="container">
 
-
   <div class="search-form-container">
    <form class="search-form" id="searchForm">
     <h2>Property Look Up</h2>
 
-
     <label for="ownerName">Street Name:</label>
     <input type="text" id="streetName" name="streetName" placeholder="Enter Street Name">
 
-
     <label for="address">Street Number</label>
     <input type="text" id="streetNumber" name="streetNumber" placeholder="Enter Street Number">
-
 
     <label for="buildingType">Town:</label>
     <select id="Town" name="Town">
@@ -184,31 +173,24 @@
       <option value="West Monroe">West Monroe</option>
       <option value="Williamstown">Williamstown</option>
 
-
     <label for="ownerLastName">Last Name</label>
     <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name">
 
-
     <button class="button" type="submit">Search</button>
 
-
     <a href="#" class="button" id="advancedSearchButton">Advanced Search</a>
-
 
     <div class="advanced-search">
       <label for="Historical District">Historical District</label>
       <input type="text" id="Historical District" name="Historical District" placeholder="Enter Historical District">
 
-
       <label for="additionalField2">Village</label>
       <input type="text" id="Village" name="Village" placeholder="Enter Village">
-
 
       <div class="checkbox-container">
         <input type="checkbox" id="stillExists" name="stillExists">
         <label for="stillExists">Still Exists</label>
       </div>
-
 
       <label for="buildingType">Side of Road:</label>
       <select id="sideOfRoad" name="sideOfRoad">
@@ -223,46 +205,33 @@
         <option value="Southwest">Southwest</option>
       </select>
 
-
       <label for="additionalField2">Architect</label>
       <input type="text" id="Architect" name="Architect" placeholder="Enter Architect">
 
-
       <label for="additionalField2">Architect Style</label>
       <input type="text" id="ArchitectStyle" name="Architect Style" placeholder="Enter Architect Style">
-
 
     </div>
    </form>
   </div>
  </div>
 
-
  <a href="index.html" class="button home-button">Home</a>
- <button onclick="goBack()"class="button" style="position: fixed; bottom: 20px; right: 20px; width: 10%;">Back</a>
+ <a href="searchpage.html" class="button" style="position: fixed; bottom: 20px; right: 20px; width: 10%;">Back</a>
 
-  <script>
-     function goBack() {
-       window.history.back();
+ <script>
+   var advancedSearchButton = document.getElementById('advancedSearchButton');
+   var advancedSearchDiv = document.querySelector('.advanced-search');
+
+   advancedSearchButton.addEventListener('click', function() {
+     if (advancedSearchDiv.style.display === 'none') {
+       advancedSearchDiv.style.display = 'block';
+       advancedSearchButton.textContent = 'Hide Advanced Search';
+     } else {
+       advancedSearchDiv.style.display = 'none';
+       advancedSearchButton.textContent = 'Advanced Search';
      }
-    var advancedSearchButton = document.getElementById('advancedSearchButton');
-    var advancedSearchDiv = document.querySelector('.advanced-search');
- 
-    advancedSearchButton.addEventListener('click', function() {
-      if (advancedSearchDiv.style.display === 'none') {
-        advancedSearchDiv.style.display = 'block';
-        setTimeout(function() {
-          advancedSearchDiv.style.opacity = '1';
-        }, 10);
-        advancedSearchButton.textContent = 'Hide Advanced Search';
-      } else {
-        advancedSearchDiv.style.opacity = '0';
-        setTimeout(function() {
-          advancedSearchDiv.style.display = 'none';
-        }, 1000);
-        advancedSearchButton.textContent = 'Advanced Search';
-      }
-    });
+   });
  </script>
  <script src="script.js"></script>
 </body>

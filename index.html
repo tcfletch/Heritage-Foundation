@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"> </script>
   <title>Heritage Foundation of Oswego</title>
   <style>
-    /* Basic styles */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -18,7 +18,7 @@
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 50px;
       color: #333;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       margin-bottom: 20px;
@@ -27,36 +27,36 @@
     .image {
       width: 50%;
       height: 200px;
-      margin: 20px auto; /* Center the image horizontally */
-      text-align: center; /* Center the image within its container */
+      margin: 20px auto;
+      text-align: center;
     }
 
     .image img {
-      max-width: 100%; /* Ensure image does not exceed container width */
-      height: auto; /* Maintain aspect ratio */
+      max-width: 100%;
+      height: auto;
     }
 
     .container {
       display: flex;
-      justify-content: space-between;
-      width: 80%;
+      justify-content: center;
+      width: 100%;
       margin-top: 20px;
     }
 
     .box {
-      width: 30%;
+      flex: 1;
+      max-width: 30%;
       background-color: #bcbda2;
       border-radius: 10px;
       padding: 20px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 0 5px;
+      font-size: 25px;
     }
 
-    .box h2 {
-      font-size: 20px;
-      text-align: center;
-    }
 
-    .box p {
+
+    .box p ul {
       font-size: 16px;
       text-align: center;
     }
@@ -69,12 +69,15 @@
       text-align: center;
       text-decoration: none;
       display: block;
-      font-size: 18px; /* Increased font size */
-      font-weight: bold; /* Bold font weight */
+      font-size: 25px;
+      font-weight: bold;
       cursor: pointer;
       margin: 10px auto;
       border-radius: 5px;
       width: calc(100% - 30px);
+    }
+    .button:hover {
+        background-color: #6e6d6d;
     }
 
     @media screen and (max-width: 768px) {
@@ -91,6 +94,23 @@
         width: 80%;
       }
     }
+      .intro {
+      position: static;
+      margin: 20px;
+      background-color: #bcbda2;
+      border-radius: 10px;
+      text-align: start;
+      padding: 20px;
+      font-size: 25px
+      }
+      hr {
+        margin: 10px auto;
+        height: 4px;
+        background-color: black;
+        border: none;
+        width: 75%;
+      }
+
 
   </style>
 </head>
@@ -100,22 +120,26 @@
   <div class="container">
     <div class="box">
       <a href="searchpage.html" class="button">1976 Building Look-Up</a>
-      <p>View homes surveyed in 1976 below</p>
+      <p>View homes surveyed in 1976</p>
     </div>
 
     <div class="box">
-      <a href="updateRequest.html" class="button">Update Property</a>
-      <p>Update surveyed home information</p>
+      <a href="updateRequest.html" class="button">Update</a>
+      <p>If you can help update the property information, please use the "Update" button</p>
     </div>
 
     <div class="box">
-      <a href="addNewProperty.html" class="button">Add Property</a>
-      <p>Add new property to 1976 buildings</p>
-      <ul>
-        <li>50+ years old</li>
-        <li>Notable style</li>
-      </ul>
+      <a href="addNewProperty.html" class="button">Add</a>
+      <p>If you think your property is significant, please use the "Add" button to nominate it</p>
     </div>
+  </div>
+  <div class="intro">
+  
+    <p>In 1976, the Heritage Foundation of Oswego surveyed architecturally significant buildings in Oswego County, particularly ones with historic significance.
+      The paper copies of these records have been scanned into this searchable database. We invite you to look at and help us update the properties.</p>
+    <p>In your search, note that the address of a site may only have a road name or location description, not the specific addresses created later for the 911 system.
+If you do not find your property, please broaden the search to a whole town or street/road and look at the photos and map. </p>
+    <p>If you need help, please contact us <a href="contactUs.html">here.</a></p>
   </div>
 
   <div class="image">
