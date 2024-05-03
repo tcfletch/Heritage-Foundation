@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heritage Foundation of Oswego</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #f8f6f1;
+    }
+
+    h1 {
+      font-size: 50px;
+      color: #333;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+    }
+
+    .image {
+      width: 50%;
+      height: 200px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .box {
+      flex: 1;
+      max-width: 45%;
+      background-color: #bcbda2;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 0 5px;
+      font-size: 25px;
+    }
+
+
+
+    .box p ul {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .button {
+      background-color: #303030;
+      border: none;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 10px auto;
+      border-radius: 5px;
+      width: calc(100% - 30px);
+    }
+    .button:hover {
+        background-color: #6e6d6d;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .box {
+        width: 80%;
+        margin-bottom: 20px;
+
+      }
+      .image {
+        width: 80%;
+      }
+    }
+      .intro {
+      position: static;
+      margin: 20px;
+      background-color: #bcbda2;
+      border-radius: 10px;
+      text-align: start;
+      padding: 20px;
+      font-size: 25px
+      width: 90%;
+      }
+      hr {
+        margin: 10px auto;
+        height: 4px;
+        background-color: black;
+        border: none;
+        width: 75%;
+      }
+
+
+  </style>
+</head>
+<body>
+  <h1>Heritage Foundation of Oswego County</h1>
+  <a href="login.php" class="button" style="position: fixed; top: 20px; right: 20px; width: 10%;">Admin Log-In</a>
+
+  <div class="container">
+    <div class="box">
+      <a href="searchpage.php" class="button">1976 Building Look-Up</a>
+      <p>View homes surveyed in 1976</p>
+    </div>
+    <div class="box">
+      <a href="addNewProperty.php" class="button">Add</a>
+      <p>If you think your property is significant, please use the "Add" button to nominate it</p>
+    </div>
+  </div>
+  <div class="intro">
+
+    <p>In 1976, the Heritage Foundation of Oswego surveyed architecturally significant buildings in Oswego County, particularly ones with historic significance.
+      The paper copies of these records have been scanned into this searchable database. We invite you to look at and help us update the properties.</p>
+    <p>In your search, note that the address of a site may only have a road name or location description, not the specific addresses created later for the 911 system.
+If you do not find your property, please broaden the search to a whole town or street/road and look at the photos and map. </p>
+    <p>If you need help, please contact us <a href="contactUs.html">here.</a></p>
+  </div>
+
+  <div class="image">
+    <img src="1976Countymap.png" alt="Home Page Image">
+  </div>
+
+</body>
+</html>
